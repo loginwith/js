@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "name": "walletconnect2",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "main": "index.js",
+  "type": "module",
+  "browser": "dist/index.js",
+  "scripts": {
+    "build": "NODE_ENV=production node esbuild.js",
+    "dev": "node esbuild.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.11.11",
+    "@walletconnect/client": "^2.0.0-beta.20.3",
+    "@walletconnect/ethereum-provider": "^2.0.0-beta.20.3",
+    "@walletconnect/qrcode-modal": "^2.0.0-alpha.20",
+    "@walletconnect/types": "^2.0.0-beta.20.3",
+    "@walletconnect/utils": "^2.0.0-beta.20.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.13.12",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2"
+  },
+  "xxbrowser": {
+    "crypto": "crypto-browserify",
+    "os": "os-browserify",
+    "stream": "stream-browserify"
+  }
+}

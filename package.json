@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "name": "loginwith-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist && ./build.sh",
+    "dev": "node esbuild.js"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.5",
+    "@types/node": "^16.11.11",
+    "@walletconnect/client": "^2.0.0-beta.20.3",
+    "@walletconnect/ethereum-provider": "^2.0.0-beta.20.3",
+    "@walletconnect/qrcode-modal": "^2.0.0-alpha.20",
+    "@walletconnect/types": "^2.0.0-beta.20.3",
+    "@walletconnect/utils": "^2.0.0-beta.20.3",
+    "ethers": "^5.5.1",
+    "events": "^3.3.0",
+    "preact": "^10.6.2",
+    "react": "npm:@preact/compat@^17.0.2",
+    "react-dom": "npm:@preact/compat@^17.0.2",
+    "tweetnacl": "^1.0.3",
+    "url": "^0.11.0",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.4.0",
+    "assert": "^2.0.0",
+    "autoprefixer": "^10.4.0",
+    "crypto-browserify": "^3.12.0",
+    "esbuild": "^0.13.12",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "tailwindcss": "^3.0.7"
+  },
+  "browser": {
+    "crypto": "crypto-browserify",
+    "os": "os-browserify",
+    "stream": "stream-browserify"
+  }
+}

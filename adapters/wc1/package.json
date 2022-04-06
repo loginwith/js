@@ -1,0 +1,27 @@
+{
+  "name": "walletconnect1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "browser": "dist/index.js",
+  "scripts": {
+    "build": "NODE_ENV=production node esbuild.js",
+    "dev": "node esbuild.js"
+  },
+  "dependencies": {
+    "@walletconnect/client": "^1.6.6",
+    "@walletconnect/ethereum-provider": "^1.6.6",
+    "@walletconnect/qrcode-modal": "^1.6.6"
+  },
+  "devDependencies": {
+    "crypto-browserify": "^3.12.0",
+    "esbuild": "^0.13.12",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2"
+  }
+}
